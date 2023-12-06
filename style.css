@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'bebra';
+    src: url(/fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'bebra-2';
+    src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        width: 97%;
+    }
+}
+
+
+/* Главный видос */
+
+.video {
+    position: relative;  
+    padding-bottom: 56.25%; /* внутрений отступ */
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+.intro {
+    max-height: 100vh; /* максимальная высота вюпорта */
+    overflow: hidden; /* скрывает содержимое, выходящее за пределы контейнера */
+}
+
+.video-2 {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video__media-2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro-2 {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+/* Контент */
+
+
+header {
+    opacity: 0; /* прозрачность */
+    animation: show 2.8s 1;
+    animation-fill-mode: forwards; /* что должна делать анимация после проигравания: останвливаеться  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* наложение */
+    background-color: aliceblue;
+    width: 100%;
+    height: 130px;
+    display: flex; /* в строку */
+    justify-content: space-between; /* равномерное расположение элементов */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-top: 50px; /* отступ сверху */
+}
+
+.first-ul {
+    margin-right: 65px;
+}
+
+li {
+    display: inline;
+    margin-right: 40px;
+    font-size: 23px;
+    font-family: 'bebra';
+}
+
+
+.icon-1 {
+    margin-right: 10px;
+}
+
+.icon-2 {
+    margin-right: 10px;
+}
+
+.zg-1 {
+    margin-top: 35px;
+    font-size: 40px;
+    font-family: 'bebra-2';
+}
+
+.header-content {
+    position: absolute;
+    top: 75.5%;
+    left: 46%;
+    z-index: 3;
+}
+
+.header-content_text {
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 40px;
+}
+
+.header-content_btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: aliceblue;
+    top: 87.5%;
+    left: 41.5%;
+    z-index: 3;
+    font-family: 'bebra-2';
+    font-size: 17.5px;
+    width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+}
+
+
+
+
+.content-1 {
+    opacity: 0;
+    animation: scroll 3.5s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 75px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around; /* равномерное расположение элеиентов */ 
+}
+
+
+
+
+.box_text {
+    font-family: 'bebra';
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+.box_link {
+    font-family: 'bebra';
+    color: black;
+    font-size: 19px;
+}
+
+.box_link:hover {
+    color: rgb(139, 137, 137);
+}
+
+
+
+
+.header-content-2 {
+    position: absolute;
+    top: 250.5%;
+    left: 46%;
+    z-index: 3;
+}
+
+.header-content_text-2 {
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 30px;
+}
+
+.header-content-3 {
+    position: absolute;
+    top: 257.5%;
+    left: 32.5%;
+    z-index: 3;
+}
+
+.header-content_zg-2 {
+
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 40px;
+}
+
+.header-content_btn-2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: aliceblue;
+    top: 270.5%;
+    left: 43.2%;
+    z-index: 3;
+    font-family: 'bebra-2';
+    font-size: 17.5px;
+    width: 320px;
+    height: 70px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+}
+
+.pics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.box-pic-1 {
+    opacity: 0;
+    animation: show 4s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8.3s;
+}
+
+.box-pic-2 {
+    opacity: 0;
+    animation: show 4s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8.3s;
+}
+
+.box-pic-3 {
+    opacity: 0;
+    animation: show 4s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8.3s;
+}
+
+.pics-zg {
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'bebra-2';
+    color: black;
+}
+
+.pics-hr {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+.content-2 {
+    position: relative;
+}
+
+.content-2_box {
+    position: absolute;
+    bottom: 25%;
+    left: 46%;
+}
+
+.content-2_box-text {
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 30px;
+}
+
+.content-2_box-2 {
+    position: absolute;
+    bottom: 17%;
+    left: 40%;
+}
+
+.content-2_box-zg {
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 40px;
+}
+
+.content-2_box-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: aliceblue;
+    bottom: 7.5%;
+    left: 42.5%;
+    z-index: 3;
+    font-family: 'bebra-2';
+    font-size: 17.5px;
+    width: 370px;
+    height: 70px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+}
+
+.tovar {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tovar-zg {
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'bebra-2';
+    color: black;
+}
+
+.tovar-zg {
+    margin: 0;
+}
+
+.yubka-info {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+.yubka-prise {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+.bomber-info {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+.bomber-prise {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+.platye-info {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+.platye-prise {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'bebra';
+}
+
+
+
+
+
+.content-3 {
+    position: relative;
+}
+
+.content-3_box {
+    position: absolute;
+    bottom: 17.5%;
+    left: 41.5%;
+}
+
+.content-3_box-zg {
+    color: aliceblue;
+    font-family: 'bebra-2';
+    font-size: 40px;
+}
+
+.content-3_box-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: aliceblue;
+    bottom: 8%;
+    left: 43.8%;
+    z-index: 3;
+    font-family: 'bebra-2';
+    font-size: 17.5px;
+    width: 330px;
+    height: 70px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+}
+
+
+
+
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column; /* столбик сверху вниз */
+}
+
+.footer-li {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: Arial;
+}
+
+.section-1-zg {
+    color: rgba(94, 92, 92, 0.973);
+    padding-left: 42.5px;
+    font-weight: 400;
+    font-family: 'bebra-2';
+}
+
+.section-1 {
+    margin-left: 70px;
+}
+
+.section-4 {
+    margin-right: 70px;
+}
+
+.section-2 {
+    padding-left: 100px;
+}
+
+.section-3 {
+    padding-left: 35px;
+}
